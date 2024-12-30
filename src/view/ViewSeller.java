@@ -23,11 +23,12 @@ public class ViewSeller {
             System.out.println("""
                     *** User Menus *** \n
                     1. Product
-                    2. Sale
-                    3. Sale Report
-                    4. Show Sale as Invoice
-                    5. Log Out
-                    6. Exit
+                    2. Customer
+                    3. Sale
+                    4. Sale Report
+                    5. Show Sale as Invoice
+                    6. Log Out
+                    7. Exit
                     """);
 
             System.out.print("[~] Option << ");
@@ -73,6 +74,44 @@ public class ViewSeller {
                 }
 
                 case 2 -> {
+                    BreakFromCustomerMenu:
+                    while (true) {
+                        System.out.println();
+                        System.out.println("=".repeat(25));
+                        System.out.println("""
+                                *** Sale Menu *** \n
+                                1. List Customer
+                                2. Search Customer
+                                3. Exit
+                                """);
+
+                        int choice;
+
+                        while (true) {
+                            System.out.print("[~] Option << ");
+                            try {
+                                choice = new Scanner(System.in).nextInt();
+                                break;
+                            } catch (Exception e) {
+                                System.out.println("[!] Invalid input!");
+                            }
+                        }
+
+                        switch (choice) {
+                            case 1 -> CustomerMenu.listCustomer();
+
+
+                            case 2 -> CustomerMenu.searchCustomer();
+
+                            case 3 -> {
+                                break BreakFromCustomerMenu;
+                            }
+                            default -> System.out.println("[!] Invalid input!");
+                        }
+                    }
+                }
+
+                case 3 -> {
                     BreakFromSaleMenu:
                     while (true) {
                         System.out.println();
@@ -120,21 +159,21 @@ public class ViewSeller {
                         }
                     }
                 }
-                case 3 -> {
+                case 4 -> {
                     System.out.println();
                     System.out.println("=".repeat(25));
                     SaleMenu.saleReport();
                 }
 
-                case 4 -> {
+                case 5 -> {
                     System.out.println();
                     System.out.println("=".repeat(25));
                     SaleMenu.displayAsInvoice();
                 }
 
-                case 5 -> Login.login();
+                case 6 -> Login.login();
 
-                case 6 -> System.exit(0);
+                case 7 -> System.exit(0);
                 default -> System.out.println("[!] Invalid option!");
             }
         }

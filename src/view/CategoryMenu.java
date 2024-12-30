@@ -82,6 +82,8 @@ public class CategoryMenu {
             if (isUpdated) {
                 System.out.println("[+] Category Updated!");
                 TableUIConfig.DisplayCategory(List.of(categoryController.getCategoryByID(categoryID)));
+                System.out.println("Press any key to continue...");
+                new Scanner(System.in).nextLine();
             } else System.out.println("[!] Error Updating Category!");
         }
     }
@@ -184,6 +186,8 @@ public class CategoryMenu {
                         .orElse(null);
                 if (foundCategory != null) {
                     TableUIConfig.DisplayCategory(List.of(foundCategory));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Category's not found!");
                 }
@@ -201,6 +205,8 @@ if (desc.equals("-1")) {
                         .orElse(null);
                 if (foundCategory != null) {
                     TableUIConfig.DisplayCategory(List.of(foundCategory));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Category's not found!");
                 }

@@ -207,6 +207,8 @@ public class ProductMenu {
             if (isUpdate) {
                 System.out.println("[+] Product updated successfully!");
                 TableUIConfig.displayProduct(List.of(productController.getProduct(id)));
+                System.out.println("Press any key to continue...");
+                new Scanner(System.in).nextLine();
             } else {
                 System.out.println("[!] Error Updating Product!");
             }
@@ -316,6 +318,8 @@ public class ProductMenu {
                         .orElse(null);
                 if (foundProduct != null) {
                     TableUIConfig.displayProduct(new ArrayList<>(List.of(foundProduct)));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Product's not found!");
                 }
@@ -333,6 +337,8 @@ public class ProductMenu {
                         .orElse(null);
                 if (foundProduct != null) {
                     TableUIConfig.displayProduct(new ArrayList<>(List.of(foundProduct)));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Product's not found!");
                 }

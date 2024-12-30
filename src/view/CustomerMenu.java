@@ -24,6 +24,8 @@ public class CustomerMenu {
         List<Customer> customers = customerController.getCustomers();
         if (!customers.isEmpty()) {
             TableUIConfig.DisplayCustomer(customers);
+            System.out.println("Press any key to continue...");
+            new Scanner(System.in).nextLine();
         } else {
             System.out.println("[!] Customer list is empty");
         }
@@ -271,6 +273,8 @@ public class CustomerMenu {
                         .orElse(null);
                 if (foundCustomer != null) {
                     TableUIConfig.DisplayCustomer(List.of(foundCustomer));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Customer's not found!");
                 }
@@ -288,6 +292,8 @@ public class CustomerMenu {
                         .orElse(null);
                 if (foundCustomer != null) {
                     TableUIConfig.DisplayCustomer(List.of(foundCustomer));
+                    System.out.println("Press any key to continue...");
+                    new Scanner(System.in).nextLine();
                 } else {
                     System.out.println("[!] Customer's not found!");
                 }
