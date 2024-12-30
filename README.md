@@ -33,7 +33,7 @@ Run the Program on Intellij
 
 - **Sales Overview**  
   - Create, void, view, or delete sales records.  
-  - Generate and view detailed sales reports filtered by date.  
+  - Generate and view sales reports filtered by date.  
 
 - **Staff Management**  
   - Add, edit, and delete staff profiles and information.  
@@ -43,7 +43,7 @@ Run the Program on Intellij
 
 - **Sales Processing**  
   - Add products to the cart and process transactions.  
-  - Generate and display invoices for completed sales.  
+  - Generate and display invoices sales.  
 
 ### General User Features
 - **Sales Processing**  
