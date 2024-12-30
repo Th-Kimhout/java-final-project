@@ -17,32 +17,28 @@ cd java-final-project
 Run the Program on Intellij
 
 ## Features
-Admin Features
-User Management:
-Add, edit, view, or delete user accounts.
-Assign roles to users.
-Product Management:
-Add, update, view, or delete product information.
-Category Management:
-Add, update, view, or delete category information.
-Sales Overview:
-add, void, view or delete sales.
-View sales reports by date.
-Staff Managerment:
-Add, edit, or delete staff information.
-Customer Management:
-Add, edit, or delete customer information.
-Sales Processing:
-Add products to the cart and process customer transactions.
-Generate and display invoice for sales.
 
-General User Features
-Sales Processing:
-Add products to the cart and process customer transactions.
-Generate and print receipts for sales.
-Inventory Access:
-View available product inventory and prices.
-Customer Management:
-Search for customers and add their information to transactions.
-Transaction History:
-View transaction history and summaries.
+### Admin Features
+- **User Management**  
+  - Create, edit, view, and delete user accounts.  
+  - Assign specific roles and permissions to users.  
+
+- **Product Management**  
+  - Add, update, view, and delete product details.  
+
+- **Category Management**  
+  - Manage categories by adding, updating, viewing, or deleting information.  
+
+- **Sales Overview**  
+  - Create, void, view, or delete sales records.  
+  - Generate and view detailed sales reports filtered by date.  
+
+- **Staff Management**  
+  - Add, edit, and delete staff profiles and information.  
+
+- **Customer Management**  
+  - Manage customer data by adding, editing, or deleting customer information.  
+
+- **Sales Processing**  
+  - Add products to the cart and process transactions.  
+  - Generate and display invo
