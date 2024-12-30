@@ -18,6 +18,8 @@ Run the Program on Intellij
 
 ## Features
 
+## Features
+
 ### Admin Features
 - **User Management**  
   - Create, edit, view, and delete user accounts.  
@@ -41,4 +43,18 @@ Run the Program on Intellij
 
 - **Sales Processing**  
   - Add products to the cart and process transactions.  
-  - Generate and display invo
+  - Generate and display invoices for completed sales.  
+
+### General User Features
+- **Sales Processing**  
+  - Add products to the cart and complete customer transactions.  
+  - Generate and print receipts for sales.  
+
+- **Inventory Access**  
+  - View product inventory, including stock availability and pricing.  
+
+- **Customer Management**  
+  - Search for existing customers and add new customer information during transactions.  
+
+- **Transaction History**  
+  - Access and review transaction history and daily summaries.  
