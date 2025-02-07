@@ -18,8 +18,6 @@ Run the Program on Intellij
 
 ## Features
 
-## Features
-
 ### Admin Features
 - **User Management**  
   - Create, edit, view, and delete user accounts.  
